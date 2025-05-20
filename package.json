@@ -12,6 +12,7 @@
   "packageManager": "pnpm@10.7.0",
   "dependencies": {
     "@11labs/client": "^0.1.4",
-    "node-record-lpcm16": "^1.0.1"
+    "node-record-lpcm16": "^1.0.1",
+    "play-sound": "^1.1.6"
   }
 }

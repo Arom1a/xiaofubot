@@ -14,6 +14,9 @@ importers:
       node-record-lpcm16:
         specifier: ^1.0.1
         version: 1.0.1
+      play-sound:
+        specifier: ^1.1.6
+        version: 1.1.6
 
 packages:
 
@@ -28,11 +31,21 @@ packages:
       supports-color:
         optional: true
 
+  find-exec@1.0.3:
+    resolution: {integrity: sha512-gnG38zW90mS8hm5smNcrBnakPEt+cGJoiMkJwCU0IYnEb0H2NQk0NIljhNW+48oniCriFek/PH6QXbwsJo/qug==}
+
   ms@2.0.0:
     resolution: {integrity: sha512-Tpp60P6IUJDTuOq/5Z8cdskzJujfwqfOTkrwIwj7IRISpnkJnT6SyJ4PCPnGMoFjC9ddhal5KVIYtAt97ix05A==}
 
   node-record-lpcm16@1.0.1:
     resolution: {integrity: sha512-H75GMOP8ErnF67m21+qSgj4USnzv5RLfm7OkEItdIi+soNKoJZpMQPX6umM8Cn9nVPSgd/dBUtc1msst5MmABA==}
+
+  play-sound@1.1.6:
+    resolution: {integrity: sha512-09eO4QiXNFXJffJaOW5P6x6F5RLihpLUkXttvUZeWml0fU6x6Zp7AjG9zaeMpgH2ZNvq4GR1ytB22ddYcqJIZA==}
+
+  shell-quote@1.8.2:
+    resolution: {integrity: sha512-AzqKpGKjrj7EM6rKVQEPpB288oCfnrEIuyoT9cyF4nmGa7V8Zk6f7RRqYisX8X9m+Q7bd632aZW4ky7EhbQztA==}
+    engines: {node: '>= 0.4'}
 
 snapshots:
 
@@ -42,6 +55,10 @@ snapshots:
     dependencies:
       ms: 2.0.0
 
+  find-exec@1.0.3:
+    dependencies:
+      shell-quote: 1.8.2
+
   ms@2.0.0: {}
 
   node-record-lpcm16@1.0.1:
@@ -49,3 +66,9 @@ snapshots:
       debug: 2.6.9
     transitivePeerDependencies:
       - supports-color
+
+  play-sound@1.1.6:
+    dependencies:
+      find-exec: 1.0.3
+
+  shell-quote@1.8.2: {}
