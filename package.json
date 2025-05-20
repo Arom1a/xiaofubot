@@ -1,0 +1,17 @@
+{
+  "name": "xiaofubot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.7.0",
+  "dependencies": {
+    "@11labs/client": "^0.1.4",
+    "node-record-lpcm16": "^1.0.1"
+  }
+}
