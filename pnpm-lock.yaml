@@ -11,12 +11,18 @@ importers:
       '@11labs/client':
         specifier: ^0.1.4
         version: 0.1.4
+      dotenv:
+        specifier: ^16.5.0
+        version: 16.5.0
       node-record-lpcm16:
         specifier: ^1.0.1
         version: 1.0.1
       play-sound:
         specifier: ^1.1.6
         version: 1.1.6
+      ws:
+        specifier: ^8.18.2
+        version: 8.18.2
 
 packages:
 
@@ -30,6 +36,10 @@ packages:
     peerDependenciesMeta:
       supports-color:
         optional: true
+
+  dotenv@16.5.0:
+    resolution: {integrity: sha512-m/C+AwOAr9/W1UOIZUo232ejMNnJAJtYQjUbHoNTBNTJSvqzzDh7vnrei3o3r3m9blf6ZoDkvcw0VmozNRFJxg==}
+    engines: {node: '>=12'}
 
   find-exec@1.0.3:
     resolution: {integrity: sha512-gnG38zW90mS8hm5smNcrBnakPEt+cGJoiMkJwCU0IYnEb0H2NQk0NIljhNW+48oniCriFek/PH6QXbwsJo/qug==}
@@ -47,6 +57,18 @@ packages:
     resolution: {integrity: sha512-AzqKpGKjrj7EM6rKVQEPpB288oCfnrEIuyoT9cyF4nmGa7V8Zk6f7RRqYisX8X9m+Q7bd632aZW4ky7EhbQztA==}
     engines: {node: '>= 0.4'}
 
+  ws@8.18.2:
+    resolution: {integrity: sha512-DMricUmwGZUVr++AEAe2uiVM7UoO9MAVZMDu05UQOaUII0lp+zOzLLU4Xqh/JvTqklB1T4uELaaPBKyjE1r4fQ==}
+    engines: {node: '>=10.0.0'}
+    peerDependencies:
+      bufferutil: ^4.0.1
+      utf-8-validate: '>=5.0.2'
+    peerDependenciesMeta:
+      bufferutil:
+        optional: true
+      utf-8-validate:
+        optional: true
+
 snapshots:
 
   '@11labs/client@0.1.4': {}
@@ -54,6 +76,8 @@ snapshots:
   debug@2.6.9:
     dependencies:
       ms: 2.0.0
+
+  dotenv@16.5.0: {}
 
   find-exec@1.0.3:
     dependencies:
@@ -72,3 +96,5 @@ snapshots:
       find-exec: 1.0.3
 
   shell-quote@1.8.2: {}
+
+  ws@8.18.2: {}
